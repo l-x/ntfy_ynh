@@ -5,6 +5,6 @@ By default, only user selected at installation can read from and write to topics
 The configuration file is located at `/var/www/<app>/server.yml`.
 
 ### Limitations
-- requires a dedicated (sub-)domain#
+- requires a dedicated (sub-)domain
 - no LDAP support by upstream application
 
