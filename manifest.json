@@ -1,0 +1,46 @@
+{
+    "name": "ntfy",
+    "id": "ntfy",
+    "packaging_format": 1,
+    "description": {
+        "en": "Open Source Push Notification Server"
+    },
+    "upstream": {
+        "license": "GPL-2.0-only",
+        "website": "https://ntfy.sh/",
+        "demo": "https://ntfy.sh/app",
+        "admindoc": "https://docs.ntfy.sh/",
+        "userdoc": "https://docs.ntfy.sh/",
+        "code": "https://github.com/binwiederhier/ntfy"
+    },
+    "url": "https://ntfy.sh/",
+    "version": "1.29.0~ynh1",
+    "license": "GPL-2.0-only",
+    "maintainer": {
+        "name": "Alexander Wühr",
+        "email": "alex@pnyhf.eu"
+    },
+    "requirements": {
+        "yunohost": ">= 11"
+    },
+    "multi_instance": true,
+    "services": [
+        "nginx"
+    ],
+    "arguments": {
+        "install": [
+            {
+                "name": "domain",
+                "type": "domain"
+            },
+            {
+                "name": "admin",
+                "type": "user"
+            },
+            {
+                "name": "password",
+                "type": "password"
+            }
+        ]
+    }
+}
