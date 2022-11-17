@@ -32,8 +32,6 @@ The configuration file is located at `/var/www/<app>/server.yml`.
 - requires a dedicated (sub-)domain#
 - no LDAP support by upstream application
 
-### Known Issues
-- Yunohost's SSO injects the header `email` to every http request (if you are logged in). ntfy interprets this header to send an email notification, which leads to an error if email notifications are disabled/not configured.
 
 ## Documentation and resources
 
